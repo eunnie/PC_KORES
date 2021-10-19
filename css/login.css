@@ -1,0 +1,564 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Noto Sans KR";
+    src: local("Noto Sans KR"),
+    local("Noto Sans KR"),
+    url(NotoSansKR.ttf);
+  }
+
+/* reset */
+* {margin: 0;padding: 0;}
+a {text-decoration: none;color: black;}
+li {list-style: none;}
+body {font-family:'Noto Sans KR','Noto Sans',sans-serif}
+img {border:0;vertical-align:top}
+address {font-style:normal}
+header,footer{width:1200px;margin:0 auto;}
+#container {outline:none}
+#wrap,
+#header,
+#visual,
+#container,
+#contents,
+#footer {position:relative;}
+
+/* 본문바로가기 */
+#skip-menu a {
+    position: absolute;
+    background: rgba(0,0,0,0.7); 
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    z-index: 100;
+    line-height: 30px;
+    top: -30px;
+    opacity: 0;
+}
+
+/* full menubar */
+
+/* menu_icon */
+#nav-icon3 {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    margin: 1px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background: #000;
+    border-radius: 7px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 12px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 24px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* full menu */
+.mainNavi {
+    width: 100%;
+    height: 1200px;
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+    border: 1px solid #aaa;
+    z-index: 999;
+    position: relative;
+    display: none;
+    margin: 0 auto;
+}
+.mainNavi .sTit {
+    text-indent: -999999px;
+    display: none;
+}
+.mainNavi #mtop:after {
+    border: 1px solid #aaa;
+    width: 1200px;
+    z-index: 9999999999999;
+}
+.mainNavi #mtop .menuList li {
+    float: right;
+    width: 160px;
+    height: 90px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.mainNavi #mtop .menuList li a {
+    padding: 10px 30px ;
+}
+
+.mainNavi nav {
+    width: 100%;
+    position:absolute;
+    top:60px;
+    z-index: 999999;
+}
+.mainNavi .naviItem .sTit {
+    text-indent: -99999px;
+    display: none;
+}
+
+.mainNavi .naviItem .ngnb {
+    width:1200px
+}
+.mainNavi .naviItem .ngnb .gnbli {
+    border-top: 1px solid #aaa;
+
+}
+.mainNavi .naviItem .ngnb .gnbli a {
+    text-align: center;
+}
+.mainNavi .naviItem .ngnb .gnbli>a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mainNavi .naviItem>ul>li { 
+    float: left;
+    height: 80px;
+    width:200px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mainNavi .naviItem>ul>li>a{
+    height:100%;
+    font-weight: bold;
+}
+.submenuContainer {
+    margin-top: 5px;
+}
+.submenuContainer .categoryTitle h2 {
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    color: #fd7b04;
+
+}
+.submenuContainer .categoryTitle>ul>li>a {
+    color: #444;
+}
+.list1 {
+    border-top: 1px solid #aaa;
+}
+.list {
+    padding: 3px;
+}
+/* header */
+#header {
+    position: relative;
+    margin-top: 10px;
+}
+#header .logo a img {
+    width: 180px;
+    height: 80px;
+}
+#header .search input.underline {
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:1;
+    width: 300px;
+}
+#header .search input {
+    background-image: url(../images/search_btn.png);
+    background-repeat: no-repeat;
+    background-position: 310px center;
+    padding: 20px;
+    position: absolute;
+    top: 15px;
+    left: 450px;
+    outline: none;
+}
+#header .hlist {
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 90px;
+}
+#header .hlist li {
+    border-bottom: 1px solid #aaa;
+    text-align: center;    
+    padding: 5px;
+    float: left;
+    margin-left: 20px;
+}
+#header .hlist ul li:hover {
+    background-color: #777;
+    color: #fff;
+
+}
+#header .hlist ul li a:hover {
+    color: #fff;
+}
+#header .gnb {
+    position:absolute;
+    top:110px;
+    margin: 0 auto;
+    border-top: 1px solid #aaa;
+}
+#header .gnb .main {
+    width: 1200px;
+    height: 50px;
+    font-size: 20px;
+}
+#header .gnb .main>li {
+    float:left;
+    width: 240px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    position: relative;   
+}
+#header .gnb .main >li>a:focus,
+#header .gnb .main>li>a:hover {
+    border-bottom: 3px solid #fd7b04;
+    z-index: 99999;
+}
+
+#header .gnb .main li a {
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+#header .gnb .main li .sub {
+    position: absolute;
+}
+#header .gnb .main li .sub:focus,
+#header .gnb .main li .sub:hover {
+    border-top: 3px solid #fd7b04;
+    z-index: 99999;
+}
+
+#header .gnb .main li .sub li {
+    z-index: 500;
+    background-color: #fff;
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
+#header .gnb .main li .sub li a {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+}
+#header .gnb .main li .sub li a:hover,
+#header .gnb .main li .sub li a:focus {
+    background-color: #fd7b04;
+    z-index: 10;
+}
+.gnb {
+    border-bottom: 1px solid #aaa;
+}
+/* contents */
+
+#contents {
+    position: relative;
+}
+.c_tit h1 {
+    font-weight: 900;
+    position: absolute;
+    left: 50%; 
+    top: 160px;
+    transform: translatex(-50%);
+}
+.c_tit p {
+    font-size: 12px;
+    color: #444;
+    position: absolute;
+    left: 50%; 
+    top: 210px;
+    transform: translatex(-50%);
+}
+#tab-menu {
+  width: 800px; 
+  background : #eee;
+  position: absolute; 
+  left: 50%; 
+  top: 260px;
+  transform: translatex(-50%);
+  border-radius: 4px;
+}
+#tab-btn ul {
+  overflow: hidden;
+}
+#tab-btn li {
+  float: left; 
+  width: 50%; 
+  text-align: center;
+  border-right: 1px solid #fff;
+  box-sizing: border-box;
+}
+#tab-btn li:nth-child(2) {
+    border:0
+}
+#tab-btn li a {
+  display: block; 
+  color: #000; 
+  padding: 15px 20px; 
+  font-weight: bold;
+}
+#tab-btn li.active a {
+  border-bottom: 4px solid #fd7b04;
+}
+#tab-cont {
+  width: 100%; 
+  background: #fff; 
+  padding: 20px; 
+  box-sizing: border-box;
+  border-radius: 0 0 4px 4px;
+  float: left;
+}
+
+
+.idpwform input {
+  width: 50%;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-size: 18px;
+  color: black;
+  outline: none;
+  margin-top: 20px;
+
+}
+.idpwform label.warning {
+  color: red !important;
+  animation: warning 0.3s ease;
+  animation-iteration-count: 3;
+}
+@keyframes warning {
+  0% {
+    transform: translateX(-8px);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+  75% {
+    transform: translateX(8px);
+  }
+}
+.login_btn {
+  margin-top: 80px;
+}
+.login_btn button {
+  width: 30%;
+  height: 120px;
+  background: #fc8b22;
+  color: #000;
+  font-size: 20px;
+  border: none;
+  position: absolute;
+  top: 110px;
+  right: 20px;
+  font-weight: bold;
+}
+.login_btn #lbtn {
+  cursor: pointer;
+}
+.login_op {
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+#join {
+  width: 50%;
+  height: 35px;
+  background: white;
+  font-size: 15px;
+  border: 0;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+}
+#join a {
+  color: black;
+  
+}
+#find {
+  width: 49.5%;
+  height: 35px;
+  background: white;
+  font-size: 15px;
+  border: 0;
+  box-sizing: border-box;
+}
+#find a {
+  color: black;
+}
+
+
+/* footer */
+#footer {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    top: 770px;
+}
+#footer .flist {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: 30px;
+    background-color: rgb(214, 214, 214);
+    font-size: 14px;
+    line-height: 30px;
+}
+#footer .flist .left {
+    margin-left: 5px;
+}
+#footer .flist .left li {
+    float: left;
+    text-align: center;
+    margin-right:10px
+
+}
+#footer .flist .left li:after {
+    text-indent:10px;
+    content:'|';
+    display:inline-block;
+}
+#footer .flist .left li:last-child:after {
+    content:'';
+    display:inline-block
+}
+#footer .flist .right {
+    position:absolute;
+    right: 0;
+    margin-right: 5px;
+}
+#footer .flist .right li {
+    float: left;
+    text-align: center;
+    margin-right:10px
+}
+#footer .flist .right li:after {
+    text-indent:10px;
+    content:'|';
+    display:inline-block;
+}
+#footer .flist .right li:last-child:after {
+    content:'';
+    display:inline-block;
+}
+
+#footer .footerInfo {
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    position: absolute;
+    top: 30px;
+    font-size: 14px;
+}
+#footer .footerInfo .flogo {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    opacity: 0.5;
+}
+#footer .footerInfo .flogo img {
+    width: 120px;
+    height: 80px;
+}
+#footer .footerInfo address {
+    text-align: center;
+    margin-top: 60px;
+}
+#footer .footerInfo .copy {
+    text-align: center;
+    margin-top: 20px;
+}
+#footer .footerInfo .btn1 {
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-size: 12px;
+    padding: 5px;
+    background: #666;
+    border: 0;
+    width: 130px;
+}
+#footer .footerInfo .btn1 {
+    color: #fff;
+}
+#footer .footerInfo .btn2 {
+    cursor: pointer;
+    position: absolute;
+    top: 95px;
+    right: 0;
+    font-size: 12px;
+    padding: 5px;
+    background: #666;
+    border: 0;
+    width: 130px;
+}
+#footer .footerInfo .btn2 {
+    color: #fff;
+
+}
