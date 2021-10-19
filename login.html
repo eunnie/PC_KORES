@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국광물자원공사</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
+
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery.bxslider.js"></script>
+    <script src="script/gnb.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/login_tab.js"></script>
+    <script src="script/bxslider.js"></script>
+    <script src="script/fullmenu.js"></script>
+    <script src="script/skip-menu.js"></script>
+
+</head>
+<body>
+    <div id="skip-menu">
+        <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+            <div class="search">
+                <input class="underline" type="text" placeholder="검색">
+            </div>
+            <div class="hlist">
+                <ul>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul>
+            </div>
+            <!-- full menubar -->
+            <!-- menu icon -->
+            <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>                    
+            <section class="mainNavi"> 
+                <h2 class="sTit">풀메뉴</h2>
+                <div id="mtop"> 
+                    <ul class="menuList"> 
+                        <li class="listStyle"><a href="join.html">회원가입</a> </li> 
+                        <li class="listStyle"><a href="login.html">로그인</a> </li> 
+                    </ul> 
+                </div> 
+                <nav>
+                    <section class="naviItem">
+                        <h2 class="sTit">풀메뉴리스트</h2>
+                        <ul class="ngnb">
+                            <li class="gnbli"><a href="#">정보공개</a>
+                                <section class="submenuContainer">
+                                    <div class="list1">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>정보공개<i class="fa fa-caret-right"></i></h2></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">정보공개안내</a></li>
+                                                <li><a href="#">정보공개목록</a></li>
+                                                <li><a href="#">즐겨찾기 목록</a></li>
+                                                <li><a href="#">공공데이터개방</a></li>
+                                                <li><a href="#">사업실명제</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>사전정보공표<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>비공개대상정보<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>고객헌장<i class="fa fa-caret-right"></i></h2></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">고객서비스헌장</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li> <!-- 정보공개 -->
+                            <li class="gnbli"><a href="#">소식·참여</a>
+                                <section class="submenuContainer">
+
+                                    <div class="list1">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>새소식<i class="fa fa-caret-right"></i></h2></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">공지사항</a></li>
+                                                <li><a href="#">보도/해명자료</a></li>
+                                                <li><a href="#">인사동정</a></li>
+                                                <li><a href="#">일자리정보</a></li>
+                                                <li><a href="#">채용공고</a></li>
+                                                <li><a href="#">입찰정보</a></li>
+                                                <li><a href="#">개인정보 제3자 제공</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>소통마당<i class="fa fa-caret-right"></i></h2></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">고객상담</a></li>
+                                                <li><a href="#">하도급지킴이</a></li>
+                                                <li><a href="#">중소기업 건의마당</a></li>
+                                                <li><a href="#">전자신문고(인권침해)</a></li>
+                                                <li><a href="#">안전신문고</a></li>
+                                                <li><a href="#">공익신고</a></li>
+                                                <li><a href="#">내부신고센터</a></li>
+                                                <li><a href="#">온라인 행정심판(권익위)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>서식자료<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>청렴관련 평가결과<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>사규 제개정 예고<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>설문조사<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div> 
+                                </section>
+                            </li> <!-- 소식·참여 -->
+                            <li class="gnbli"><a href="#">사업분야</a>
+                                        <section class="submenuContainer">
+        
+                                            <div class="list1">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>투자사업<i class="fa fa-caret-right"></i></h2></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">해외투자현황</a></li>
+                                                        <li><a href="#">주요프로젝트</a></li>
+                                                        <li><a href="#">국내투자현황</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>국내지원사업<i class="fa fa-caret-right"></i></h2></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">탐사지원</a></li>
+                                                        <li><a href="#">개발지원</a></li>
+                                                        <li><a href="#">광산안전지원</a></li>
+                                                        <li><a href="#">융자지원</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>해외지원사업<i class="fa fa-caret-right"></i></h2></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">발굴지원</a></li>
+                                                        <li><a href="#">기술지원</a></li>
+                                                        <li><a href="#">인력양성</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>R&D<i class="fa fa-caret-right"></i></h2></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">기술개발</a></li>
+                                                    <li><a href="#">기술지원</a></li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>비축사업<i class="fa fa-caret-right"></i></h2></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">비축사업 개요</a></li>
+                                                    <li><a href="#">비축 현황</a></li>
+                                                    <li><a href="#">비축광산물 대여</a></li>
+                                                    <li><a href="#">비축광산물 방출</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>광물시험의뢰<i class="fa fa-caret-right"></i></h2></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">품질경영방침 및 선언서</a></li>
+                                                    <li><a href="#">광물시험안내</a></li>
+                                                    <li><a href="#">수수료 안내</a></li>
+                                                    <li><a href="#">광물시험분류</a></li>
+                                                    <li><a href="#">시험담당안내</a></li>
+                                                    <li><a href="#">광물시험FAQ</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>자원처리기술서비스<i class="fa fa-caret-right"></i></h2></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">안내</a></li>
+                                                    <li><a href="#">장비 직접활용</a></li>
+                                                    <li><a href="#">단위공정시험 의뢰</a></li>
+                                                    <li><a href="#">일괄공정시험 의뢰</a></li>
+                                                    <li><a href="#">공정최적화 연구용역</a></li>
+                                                    <li><a href="#">보유장비 및 시설목록</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>지원사업절차<i class="fa fa-caret-right"></i></h2></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">융자지원</a></li>
+                                                    <li><a href="#">해외 자원조사</a></li>
+                                                    <li><a href="#">국내 자원조사</a></li>
+                                                    <li><a href="#">비축광산물 대여</a></li>
+                                                    <li><a href="#">비축광산물 방출</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                            </li> <!-- 사업분야 -->
+                            <li class="gnbli"><a href="#">열린경영</a>
+                                        <section class="submenuContainer">
+        
+                                            <div class="list1">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>경영공시<i class="fa fa-caret-right"></i></h2></a>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>사회공헌<i class="fa fa-caret-right"></i></h2></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">목표 및 방향</a></li>
+                                                        <li><a href="#">자원사랑봉사단</a></li>
+                                                        <li><a href="#">사회공헌계획</a></li>
+                                                        <li><a href="#">사회공헌활동</a></li>
+                                                        <li><a href="#">활동마당</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>윤리경영<i class="fa fa-caret-right"></i></h2></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">윤리경영개요</a></li>
+                                                        <li><a href="#">윤리경영 추진체계</a></li>
+                                                        <li><a href="#">활동 및 규범</a></li>
+                                                        <li><a href="#">인권경영</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>반부패 청렴 센터<i class="fa fa-caret-right"></i></h2></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="#">반부패청렴자료실</a></li>
+                                                        <li><a href="#">반부패청렴 위반사례</a></li>
+                                                        <li><a href="#">청렴계약제도</a></li>
+                                                        <li><a href="#">부정/비리 신고센터</a></li>
+                                                        <li><a href="#">갑질근절 노력</a></li>
+                                                        <li><a href="#">갑질피해 신고센터</a></li>
+                                                        <li><a href="#">갑질행위 징계사례</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>지속가능경영<i class="fa fa-caret-right"></i></h2></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">지속가능경영이란?</a></li>
+                                                    <li><a href="#">이해관계자 관리</a></li>
+                                                    <li><a href="#">지속가능경영보고서</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>동반성장 함성<i class="fa fa-caret-right"></i></h2></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">함성 소개</a></li>
+                                                    <li><a href="#">함성 알림</a></li>
+                                                    <li><a href="#">함성 공유</a></li>
+                                                    <li><a href="#">함성 소통</a></li>                                                    
+                                                </ul>
+                                                </div>
+                                            </div> 
+                                            <div class="list">
+                                                <div class="toplist">
+                                                <a href="#" class="categoryTitle"><h2>광산안전위원회<i class="fa fa-caret-right"></i></h2></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#">위원회 소개</a></li>
+                                                    <li><a href="#">광산안전기술기준</a></li>
+                                                    <li><a href="#">알림마당</a></li>
+                                                    <li><a href="#">참여마당</a></li>
+                                                </ul>
+                                                </div>
+                                            </div> 
+                                        </section>
+                            </li> <!-- 열린경영 -->
+                            <li class="gnbli"><a href="#">KORES 소개</a>
+                                <section class="submenuContainer">
+
+                                    <div class="list1">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>공사소개<i class="fa fa-caret-right"></i></h2></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">공사연혁 및 현황</a></li>
+                                                <li><a href="#">CI</a></li>
+                                                <li><a href="#">이사회</a></li>
+                                                <li><a href="#">포토뉴스</a></li>
+                                                <li><a href="#">홍보영상</a></li>
+                                                <li><a href="#">홍보브로셔</a></li>
+                                                <li><a href="#">KORES 50년사</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>조직안내<i class="fa fa-caret-right"></i></h2></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">조직도</a></li>
+                                                <li><a href="#">조직 주요업무</a></li>
+                                                <li><a href="#">국내 및 해외사무소</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>경영전략<i class="fa fa-caret-right"></i></h2></a>
+                                        <ul class="submenu">
+                                            <li><a href="#">전략경영체계</a></li>
+                                            <li><a href="#">비전과 핵심가치</a></li>
+                                            <li><a href="#">경영이념 및 방치</a></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>인재채용<i class="fa fa-caret-right"></i></h2></a>
+                                        <ul class="submenu">
+                                            <li><a href="#">채용안내</a></li>
+                                            <li><a href="#">인재상</a></li>
+                                            <li><a href="#">인사 및 복지</a></li>
+                                            <li><a href="#">채용 FAQ</a></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>찾아오시는 길<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li> <!-- KORES 소개 -->
+                            <li class="gnbli"><a href="#">이용안내</a>
+                                <section class="submenuContainer">
+
+                                    <div class="list1">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>정보처리정책<i class="fa fa-caret-right"></i></h2></a>
+                                            <ul class="submenu">
+                                                <li><a href="#">개인정보처리방침</a></li>
+                                                <li><a href="#">정보주체 권리행사 방법</a></li>
+                                                <li><a href="#">이메일무단수집거부</a></li>
+                                                <li><a href="#">저작권 정책</a></li>
+                                                <li><a href="#">영상정보기기 운영방침</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>사이트맵<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>RSS 서비스<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="toplist">
+                                        <a href="#" class="categoryTitle"><h2>배너마당<i class="fa fa-caret-right"></i></h2></a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li> <!-- 이용안내 -->
+                        </ul>
+                    </section>
+                </nav>
+            </section> <!-- full menubar end -->
+            <!-- gnb -->
+            <div class="gnb">
+                <ul class="main">
+                    <li><a href="#">정보공개</a>
+                        <ul class="sub">
+                            <li><a href="#">정보공개</a></li>
+                            <li><a href="#">사전정보공표</a></li>
+                            <li><a href="#">비공개대상정보</a></li>
+                            <li><a href="#">고객헌장</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">소식･참여</a>
+                        <ul class="sub">
+                            <li><a href="#">새소식</a></li>
+                            <li><a href="#">소통마당</a></li>
+                            <li><a href="#">서식자료</a></li>
+                            <li><a href="#">청렴관련 평가결과</a></li>
+                            <li><a href="#">사규 제개정 예고</a></li>
+                            <li><a href="#">설문조사</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">사업분야</a>
+                        <ul class="sub">
+                            <li><a href="#">투자사업</a></li>
+                            <li><a href="#">국내지원사업</a></li>
+                            <li><a href="#">해외지원사업</a></li>
+                            <li><a href="#">R&D</a></li>
+                            <li><a href="#">비축사업</a></li>
+                            <li><a href="#">광물시험의뢰</a></li>
+                            <li><a href="#">자원처리기술서비스</a></li>
+                            <li><a href="#">지원사업절차</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">열린경영</a>
+                        <ul class="sub">
+                            <li><a href="#">경영공시</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">반부패청렴센터</a></li>
+                            <li><a href="#">지속가능경영</a></li>
+                            <li><a href="#">동반성장 함성</a></li>
+                            <li><a href="#">광산안전위원회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">KORES소개</a>
+                        <ul class="sub">
+                            <li><a href="#">공사소개</a></li>
+                            <li><a href="#">조직안내</a></li>
+                            <li><a href="#">경영전략</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- gnb end -->
+        </header> <!-- header end -->
+
+        <!-- contents -->
+        <div id="contents">
+        <div class="c_tit">
+            <h1>로그인</h1>
+            <p>개인 또는 사업자를 선택해주세요.</p>
+        </div>
+        <div id="tab-menu">
+            <div id="tab-btn">
+              <ul>
+                <li class="active"><a href="#">개인</a></li>
+                <li><a href="#">사업자</a></li>
+              </ul>
+            </div>
+          
+            <div id="tab-cont">
+                <div>
+                    <section id="tab-item-1">
+                        <form action="login.php" method="POST">
+                            <div class="idpwform">
+                            <input type="text" id="id" name="id" autocomplete="off" placeholder="아이디를 입력해주세요." required />
+                            </div>
+                            <div class="idpwform">
+                            <input type="password" id="pw" name="pw" autocomplete="off" placeholder="비밀번호를 입력해주세요." required />
+                            </div>
+                            <div class="login_btn">
+                            <button type="submit" id="lbtn">로그인</button>
+                            </div>
+                            <div class="login_op">
+                            <button id="join"><a href="join.html">회원가입</a></button>
+                            <button id="find"><a href="#">ID/PW찾기</a></button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div>
+                    <section id="tab-item-2">
+                        <form action="login.php" method="POST">
+                            <div class="idpwform">
+                                <input type="text" id="id" name="id" autocomplete="off" placeholder="아이디를 입력해주세요." required />
+                            </div>
+                            <div class="idpwform">
+                                <input type="password" id="pw" name="pw" autocomplete="off" placeholder="비밀번호를 입력해주세요." required />
+                            </div>
+                            <div class="login_btn">
+                            <button type="submit" id="lbtn">로그인</button>
+                            </div>
+                            <div class="login_op">
+                            <button id="join"><a href="join.html">회원가입</a></button>
+                            <button id="find"><a href="#">ID/PW찾기</a></button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+        </div><!-- contents end -->
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="flist">
+                <ul class="left">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#">마이닝센터</a></li>
+                    <li><a href="#">전자도서관</a></li>
+                    <li><a href="#">KOMIS한국자원정보</a></li>
+                    <li><a href="#">KMRGIS광물지리정보</a></li>
+                </ul>
+            </div>
+            <div class="footerInfo">
+                <h2 class="flogo">
+                    <img src="images/logo.png" alt="flogo">
+                </h2>
+                <address>(우) 26464 강원도 원주시 혁신로 199 한국광물자원공사 TEL 033-736-5000</address>
+                <p class="copy">COPYRIGHT 2021 KORES Corp. ALL RIGHTS RESERVED.</p>
+                <button type="button" class="btn1" onclick="window.open('https://www.kores.or.kr/hkor/ug/ug05/bannerUser/bannerUserList.do') ">배너마당 바로가기</button>
+                <button type="button" class="btn2" onclick="window.open('https://www.kores.or.kr/hmine/userMain/hmineMain.do') ">광물이야기 바로가기</button>
+            </div>
+        </footer> <!-- footer end -->
+    </div>
+</body>
+</html>
